@@ -12,6 +12,16 @@ export function LoginPage() {
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  const allowedEmailDomains = ["tascoutsourcing", "aiqusearch", "futuremilez"];
+
+  const isAllowedEmailDomain = (value: string) => {
+    const atIndex = value.lastIndexOf("@");
+    if (atIndex === -1) return false;
+    const domain = value.slice(atIndex + 1).toLowerCase();
+    if (!domain) return false;
+    return allowedEmailDomains.some((base) => domain === base || domain.startsWith(`${base}.`));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
@@ -19,13 +29,21 @@ export function LoginPage() {
 
     // Simulate authentication - replace with real authentication
     setTimeout(() => {
+      if (!email || !password) {
+        setError("Please enter your email and password");
+        setIsLoading(false);
+        return;
+      }
+      if (!isAllowedEmailDomain(email)) {
+        setError("Please use your company email (@tascoutsourcing, @aiqusearch, or @futuremilez).");
+        setIsLoading(false);
+        return;
+      }
       if (email && password) {
         // Store authentication state
         localStorage.setItem("isAuthenticated", "true");
         localStorage.setItem("userEmail", email);
         navigate("/");
-      } else {
-        setError("Please enter your email and password");
       }
       setIsLoading(false);
     }, 800);
@@ -78,7 +96,7 @@ export function LoginPage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="your.email@tasc.com"
+                  placeholder="your.name@tascoutsourcing.com"
                   className="w-full pl-[48px] pr-[16px] py-[14px] text-[15px] font-['Gotham'] rounded-[12px] border-2 border-gray-200 focus:border-[#00bfff] focus:outline-none transition-colors"
                   required
                 />
