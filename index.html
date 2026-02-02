@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSA Business Travel - TASC</title>
+    
+    <!-- Spline Viewer Script -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.46/build/spline-viewer.js"></script>
+    
+    <!-- HubSpot Form Script -->
+    <script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        if (window.hbspt) {
+          setTimeout(function() {
+            const formContainer = document.getElementById('hubspot-form-container');
+            if (formContainer) {
+              window.hbspt.forms.create({
+                portalId: "20309062",
+                formId: "a38660ab-460e-458e-a86d-5a83e035a23d",
+                region: "na1",
+                target: '#hubspot-form-container'
+              });
+            }
+          }, 1000);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>
