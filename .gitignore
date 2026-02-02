@@ -1,3 +1,4 @@
 
 # Ignore design export zips
 *.zip
+.vercel

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imgTascLogo from "figma:asset/0399c2ba8c161094279ce73755571815f5821b3f.png";
-import imgHeroBackground from "figma:asset/9962e53636cd98d4becf3c807167abc6855c6f7f.png";
+import imgTascLogo from "@/assets/0399c2ba8c161094279ce73755571815f5821b3f.png";
+import imgHeroBackground from "@/assets/9962e53636cd98d4becf3c807167abc6855c6f7f.png";
 import { Counter } from "@/app/components/Counter";
 import { WhyTASC } from "@/app/components/WhyTASC";
 

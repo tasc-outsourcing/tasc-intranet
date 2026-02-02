@@ -1,13 +1,13 @@
 import svgPaths from "./svg-lr6orhlwy6";
-import imgImage5 from "figma:asset/2b3412e8fe117b35199bad27286347d3bc75c3be.png";
-import imgRectangle4 from "figma:asset/de1bf874bf69404b63ee0fb1e0c69e16acd00045.png";
-import imgImage38 from "figma:asset/5607354ae5dab2a1b30487d3421c42dd8fac12af.png";
-import imgImage40 from "figma:asset/07793db79167235ca710c4e4e0f7ca4e2be2a90f.png";
-import imgBusinessPartnersStudyingInformationDocumentsWithChartsOffice1 from "figma:asset/f145603e0cdc820a746dbca78f608bca2b195882.png";
-import imgImage39 from "figma:asset/a4a02b94464a0f37801e084d268c49f869b66679.png";
-import imgImage41 from "figma:asset/56505b481111f348d37a4c358773b251ee5b697b.png";
-import imgImage43 from "figma:asset/b764f20887295fcb1fe40f1bb7d76e94806a9e2a.png";
-import imgImage71 from "figma:asset/ce1bcf8dceface85444e9fd0ba67e331abe17cef.png";
+import imgImage5 from "@/assets/2b3412e8fe117b35199bad27286347d3bc75c3be.png";
+import imgRectangle4 from "@/assets/de1bf874bf69404b63ee0fb1e0c69e16acd00045.png";
+import imgImage38 from "@/assets/5607354ae5dab2a1b30487d3421c42dd8fac12af.png";
+import imgImage40 from "@/assets/07793db79167235ca710c4e4e0f7ca4e2be2a90f.png";
+import imgBusinessPartnersStudyingInformationDocumentsWithChartsOffice1 from "@/assets/f145603e0cdc820a746dbca78f608bca2b195882.png";
+import imgImage39 from "@/assets/a4a02b94464a0f37801e084d268c49f869b66679.png";
+import imgImage41 from "@/assets/56505b481111f348d37a4c358773b251ee5b697b.png";
+import imgImage43 from "@/assets/b764f20887295fcb1fe40f1bb7d76e94806a9e2a.png";
+import imgImage71 from "@/assets/ce1bcf8dceface85444e9fd0ba67e331abe17cef.png";
 import { imgImage37 } from "./svg-yen64";
 
 function Frame18() {

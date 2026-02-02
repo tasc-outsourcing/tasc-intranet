@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet, NavLink, useNavigate } from "react-router";
 import { LogOut } from "lucide-react";
-import imgTascLogo from "figma:asset/0399c2ba8c161094279ce73755571815f5821b3f.png";
+import imgTascLogo from "@/assets/0399c2ba8c161094279ce73755571815f5821b3f.png";
 
 export function Layout() {
   const navigate = useNavigate();

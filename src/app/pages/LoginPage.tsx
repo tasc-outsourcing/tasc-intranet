@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { Lock, User, Eye, EyeOff, ArrowRight } from "lucide-react";
 import { SplineViewer } from "@/app/components/SplineViewer";
-import imgTascLogo from "figma:asset/0399c2ba8c161094279ce73755571815f5821b3f.png";
+import imgTascLogo from "@/assets/0399c2ba8c161094279ce73755571815f5821b3f.png";
 
 export function LoginPage() {
   const navigate = useNavigate();
